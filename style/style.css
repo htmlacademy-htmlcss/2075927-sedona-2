@@ -1,0 +1,15 @@
+.hero-main-picture {
+  background-image: url("../images for sedona/welcome.jpg");
+  width: 1200px;
+  height: 485px;
+
+}
+
+ /* .hero-logo {
+  top: -100px;
+  right: 200px;
+} */
+
+body {
+   background-color: rgb(157, 200, 186);
+}
