@@ -11,7 +11,7 @@
     <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html" aria-current="page">
-          <img class="page-header-logo" src="images for sedona\catalog\logo.svg" width="138" height="64"
+          <img class="page-header-logo" src="images\catalog\logo.svg" width="138" height="64"
             alt="Логотип города Седона.">
         </a>
         <ul class="navigation-list">
@@ -27,7 +27,7 @@
         </ul>
         <ul class="navigation-user">
           <li class="navigation-user-item">
-            <a class="navigation-user-link navigation-user-link-search" href="#">
+            <button class="navigation-user-link navigation-user-link-search" href="#"></button>
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
@@ -39,7 +39,7 @@
           </li>
         </ul>
       </nav>
-      <a class="header-button" href="#search">Хочу сюда</a>
+      <button class="header-button" href="#search">Хочу сюда</button>
     </header>
     <!-- основной контент -->
     <main>
@@ -66,14 +66,14 @@
             </li>
             <li class="hotels-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="pool-inner" сhecked>
+                <input class="control-input" type="checkbox" name="pool-inner" checked>
 
                 Парковка
               </label>
             </li>
             <li class="hotels-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="parking-inner" checked>
+                <input class="control-input" type="checkbox" name="parking-inner">
                 Wi-Fi
             </li>
           </ul>
@@ -84,58 +84,60 @@
           <ul class="housing-filter-list">
             <li class="housing-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="0">
+                <input class="control-input" type="radio" name="product-group" value="type of housing"checked>
 
                 Гостиницы
               </label>
             </li>
             <li class="housing-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="0" checked>
+                <input class="control-input" type="radio" name="product-group" value="inn">
 
                 Отель
               </label>
             </li>
             <li class="housing-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="0">
+                <input class="control-input" type="radio" name="product-group" value="hotel">
 
                 Апартаменты
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="price-filter-group">
-          <legend class="price-filter-title">Стоимость, ₽:</legend>
-          <label class="visually-hidden" for="for-user">От</label>
-          <input type="text" id="from-price" name="from-price" placeholder="0">
-          <label class="visually-hidden" for="for-user">До</label>
-          <input type="text" id="before-price" name="befpre-price" placeholder="9000">
-        </fieldset>
+          <fieldset class="price-filter-group">
+            <legend class="price-filter-title">Стоимость, ₽:</legend>
+            <input type="range" min="0" max="9000" step="1">
+            <label class="visually-hidden" for="for-user">От</label>
+            <input type="text" id="from-price" name="from-price" placeholder="0">
+            <label class="visually-hidden" for="for-user">До</label>
+            <input type="text" id="before-price" name="befpre-price" placeholder="9000">
+          </fieldset>
+
         </p>
         <button class="subscribe-button" type="submit">Применить</button>
         <button class="subscribe-button" type="submit">Сбросить</button>
         </section>
 
-        <section class="catalog" data-test="catalog">
-          <h2 class="catalog-title">Найдено гостиниц: 38</h2>
+        <section class="catalog-card" data-test="catalog-card">
+          <h2 class="catalog-card-title">Найдено гостиниц: 38</h2>
           <form>
-            <label for="catalog-select"></label>
-            <select class="catalog-select" id="catalog-select">
+            <label for="catalog-card-select"></label>
+            <select class="catalog-card-select" id="catalog-card-select">
               <option value="0">Сначала дешевые</option>
               <option value="0">Дорогие</option>
               <option value="0">Популярное</option>
             </select>
-            <a class="catalog-view catalog-view-selected" href="#">Плитка</a>
-            <a class="catalog-view catalog-view-selected" href="#">Одна</a>
-            <a class="catalog-view catalog-view-selected" href="#">По одной список</a>
+            <a class="catalog-card-view catalog-card-view-selected" href="#">Плитка</a>
+            <a class="catalog-card-view catalog-card-view-selected" href="#">Одна</a>
+            <a class="catalog-card-view catalog-card-view-selected" href="#">По одной список</a>
           </form>
-          <ul class="catalog-list">
-            <li class="catalog-item">
-              <img class="catalog-card-amara-img" width="300" height="212" src="images for sedona\catalog\hotel-1.jpg"
+          <ul class="catalog-card-list">
+            <li class="catalog-card-item">
+              <img class="catalog-card-amara-img" width="300" height="212" src="images\catalog\hotel_amara.jpg"
                 alt="Гостиницы Амара Резорт и Спа">
-              <h3 class="catalog-title-link" href="#">Amara Resort & Spa</h3>
-              <p class="catalog-description">Гостиницa</p>
+              <h3 class="catalog-card-title-link" href="#">Amara Resort & Spa</h3>
+              <p class="catalog-card-description">Гостиницa</p>
               <p>от 4000 ₽</p>
               <a class="more-details" href="#">Подробнее</a>
               <button class="favorites">В избранное</button>
@@ -147,9 +149,9 @@
           </ul>
         </section>
 
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <img class="catalog-card-amara-img" width="300" height="212" src="images for sedona\catalog\hotel-2.jpg"
+        <ul class="catalog-card-list">
+          <li class="catalog-card-item">
+            <img class="catalog-card-amara-img" width="300" height="212" src="images\catalog\villa_poco_diablo.jpg"
               alt="Гостиницa Вилла Поко Диабло">
             <h3 class="catalog-title-link" href="#">Villas at Poco Diablo</h3>
             <p class="catalog-description">Гостиницa</p>
@@ -163,12 +165,12 @@
           <p>Рейтинг: 9,2</p>
         </ul>
 
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <img class="catalog-card-amara-img" width="300" height="212" src="images for sedona\catalog\hotel-3.jpg"
+        <ul class="catalog-card-list">
+          <li class="catalog-card-item">
+            <img class="catalog-card-amara-img" width="300" height="212" src="images\catalog\hotel_desert.jpg"
               alt="Гостиницa Дэзерт Куал Инн">
-            <h3 class="catalog-title-link" href="#">Desert Quaill inn</h3>
-            <p class="catalog-description">Гостиницa</p>
+            <h3 class="catalog-card-title-link" href="#">Desert Quaill inn</h3>
+            <p class="catalog-card-description">Гостиницa</p>
             <p>от 2500 ₽</p>
             <a class="more-details" href="#">Подробнее</a>
             <button class="favorites">В избранное</button>
@@ -179,12 +181,12 @@
           <p>Рейтинг: 6,9</p>
         </ul>
 
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <img class="catalog-card-amara-img" width="300" height="212" src="images for sedona\catalog\hotel-4.jpg"
+        <ul class="catalog-card-list">
+          <li class="catalog-card-item">
+            <img class="catalog-card-amara-img" width="300" height="212" src="images\catalog\hotel_greentree.jpg"
               alt="Гостиницa Гринтри Инн">
-            <h3 class="catalog-title-link" href="#">GreenTree Inn</h3>
-            <p class="catalog-description">Гостиницa</p>
+            <h3 class="catalog-card-title-link" href="#">GreenTree Inn</h3>
+            <p class="catalog--card-description">Гостиницa</p>
             <p>от 2500 ₽</p>
             <a class="more-details" href="#">Подробнее</a>
             <button class="favorites">В избранное</button>
@@ -236,21 +238,21 @@
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="footer-social-link" href="https://vk.com/htmlacademy">
-            <img class="footer-logo-link-vk" src="images for sedona\catalog\vk.svg" width="24" height="14"
+            <img class="footer-logo-link-vk" src="images\catalog\vk.svg" width="24" height="14"
               alt="логотип Вконтакте">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="footer-social-item">
           <a class="footer-social-link" href="https://twitter.com/htmlacademy">
-            <img class="footer-logo-link-twitter" src="images for sedona\catalog\twitter.svg" width="24" height="14"
-              alt="Логитип Твиттер">
-            <span class="visually-hidden">Tвиттер</span>
+            <img class="footer-logo-link-twitter" src="images\catalog\twitter.svg" width="24" height="14"
+              alt="Логитип Twitter">
+            <span class="visually-hidden">Twitter</span>
           </a>
         </li>
         <li class="footer-social-item">
           <a class="footer-social-link" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
-            <img class="footer-logo-link-youtube" src="images for sedona\catalog\youtube.svg" width="24" height="14"
+            <img class="footer-logo-link-youtube" src="images\catalog\youtube.svg" width="24" height="14"
               alt="Логотип Youtube">
             <span class="visually-hidden">YouTube</span>
           </a>
@@ -258,7 +260,7 @@
       </ul>
       <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="copyright" href="https://htmlacademy.ru/">Разработано в .htmlacademy
-        <img class="footer-logo-link-academy" src="images for sedona\HTML Academy.svg" width="115" height="33"
+        <img class="footer-logo-link-academy" src="images\html_academy.svg" width="115" height="33"
           alt="Лого html Academy">
       </a>
     </footer>
