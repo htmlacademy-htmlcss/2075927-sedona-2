@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Роман Телегин](https://up.htmlacademy.ru/htmlcss-individual/2/user/2075927).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Антон Варнавский](https://htmlacademy.ru/profile/anton_varnauski).
+* Сайт: [Мой проект Седона](https://one-donovan.github.io/2075927-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
