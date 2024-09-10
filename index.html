@@ -54,7 +54,7 @@
       <!-- Основной контент -->
       <main class="main-index" data-test="main">
         <section class="hero hero-main-picture hero-main-picture-divider" data-test="hero">
-          <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
+          <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
           <svg width="458" height="352" aria-hidden="true" focusable="false" style="margin: -1px 0 1px 0; "
             viewBox="0 0 458 352" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -124,17 +124,17 @@
           <p class="infrastructure-lead-description">Опытный персонал и качественное обслуживание!</p>
           <ul class="infrastructure-list">
             <li class="infrastructure-item infrastructure-item-home infrastructure-item-accent-dark">
-              <h4 class="infrastructure-title">Жильё</h4>
+              <h3 class="infrastructure-title">Жильё</h3> <!-- переделал заголовки на h3 -->
               <p class="infrastructure-description">Рекомендуем пожить<br> в настоящем мотеле,<br>
                 всё как в кино!</p>
             </li>
             <li class="infrastructure-item infrastructure-item-food infrastructure-item-accent-light">
-              <h4 class="infrastructure-title">Еда</h4>
+              <h3 class="infrastructure-title">Еда</h3>
               <p class="infrastructure-description">Всегда заказывайте<br>
                 топовый фирменный бургер,<br> вы не разочаруетесь!</p>
             </li>
             <li class="infrastructure-item infrastructure-item-souvenir infrastructure-item-accent-dark">
-              <h4 class="infrastructure-title">Сувениры</h4>
+              <h3 class="infrastructure-title">Сувениры</h3>
               <p class="infrastructure-description">Не только китайского,<br>
                 но и настоящего местного<br> производства!</p>
             </li>
@@ -238,7 +238,7 @@
         </a>
       </footer>
       <!-- модальное окно -->
-      <div class="modal-container modal-container-close">
+<!--       <div class="modal-container modal-container-close">
         <div class="modal modal-auth">
           <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
@@ -250,25 +250,25 @@
                 <span class="title-before-input">Дата Заезда:</span>
                 <label class="visually-hidden" for="date-before">Дата заезда</label>
                 <input class="auth-form-field field" type="text" value="27 апреля 2020" id="date-before"
-                  name="date-before" placeholder="27 апреля 2020">
+                  name="date-before" placeholder="27 апреля 2020" required>
                 <span class="form-description-first">Мы не можем отправить вас в прошлое</span>
               </div>
               <div class="field-group">
                 <span class="title-before-input">Дата Выезда:</span>
                 <label class="visually-hidden" for="date-after">Дата выезда</label>
                 <input class="auth-form-field field" type="text" value="1 сентября 2023" id="date-after"
-                  name="date-after" placeholder="1 сентября 2021">
+                  name="date-after" placeholder="1 сентября 2021" required>
                 <span class="form-description-second">На эти даты есть свободные номера. Пока есть</span>
               </div>
               <div class="block-type">
                 <span class="block-type-description">Взрослые:</span>
-                <button class="button-minus" type="button">
+                <button class="button-minus" type="button">Минус
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 9V11H17V9H3Z" />
                   </svg>
                 </button>
-                <input class="choice" type="text" value="2" placeholder="2">
-                <button class="button-plus" type="button">
+                <input class="choice" type="text" value="2" placeholder="2" required>
+                <button class="button-plus" type="button">Плюс
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
                   </svg>
@@ -279,23 +279,23 @@
                   <span class="tooltip-text" role="tooltip">Укажите количество детей, которые будут с вами,
                     возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
-                <button class="button-minus" type="button">
+                <button class="button-minus" type="button">Минус
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 9V11H17V9H3Z" />
                   </svg>
                 </button>
                 <input class="choice" type="text" value="2" placeholder="2">
-                <button class="button-plus" type="button">
+                <button class="button-plus" type="button">Плюс
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
                   </svg>
                 </button>
               </div>
-              <button class="button-find-form" type="button">Найти</button>
+              <button class="button-find-form" type="submit">Найти</button> исправлено на сабмит
             </form>
           </section>
         </div>
-      </div>
+      </div> -->
     </div>
   </body>
 </html>
