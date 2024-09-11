@@ -101,12 +101,11 @@ body {
 
 .header-button:active {
   background-color: #756157;
-  color: rgba(255, 255, 255, 0.5)
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .header-button:disabled {
   background-color: #e5e5e5;
-  opacity: 0.7;
   pointer-events: none;
 }
 
@@ -431,7 +430,7 @@ body {
 }
 
 .advantages-description {
-  margin-top: 1px;
+  margin: 1px -3px 0 0;
   padding: 0;
   line-height: 21px;
   color: #ffffff;
@@ -584,12 +583,11 @@ body {
 
 .search-button:active {
   background-color: #756157;
-  color: rgba(255, 255, 255, 0.5)
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .search-button:disabled {
   background-color: #e5e5e5;
-  opacity: 0.7;
   pointer-events: none;
 }
 
@@ -610,7 +608,7 @@ body {
 }
 
 .subscribe-title {
-  margin: 96px 397px 0;
+  margin: 95px 397px 0;
   padding: 0;
   line-height: 36px;
   font-weight: 700;
@@ -679,7 +677,7 @@ body {
 
 .subscribe-button:active {
   background-color: #82b3d3;
-  color: rgba(255, 255, 255, 0.5)
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .subscribe-button:disabled {
@@ -830,7 +828,6 @@ body {
 
 .placeholder-form:disabled {
   background-color: #e5e5e5;
-  opacity: 0.6;
   pointer-events: none;
 }
 
@@ -1261,7 +1258,7 @@ body {
   padding: 0;
   margin-top: 30px;
   margin-bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 2px;
 }
 
@@ -1345,7 +1342,7 @@ body {
 
 .subscribe-button-apply:active {
   background-color: #82b3d3;
-  color: rgba(255, 255, 255, 0.5)
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .subscribe-button-apply:disabled {
@@ -1373,7 +1370,7 @@ body {
 }
 
 .subscribe-button-reset:hover {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.6)
 }
 
 .subscribe-button-reset:focus {
@@ -1383,12 +1380,12 @@ body {
 }
 
 .subscribe-button-reset:active {
-  color: rgba(255, 255, 255, 0.5);
-  opacity: 0.1;
+  color: rgba(255, 255, 255, 0.3);
   outline: none;
 }
 
 .subscribe-button-reset:disabled {
+  color: rgba(255, 255, 255, 0.1);
   pointer-events: none;
 }
 
@@ -1423,7 +1420,6 @@ body {
   align-items: center;
   max-width: 400px;
   margin: 0;
-  /* padding-right: 190px; */
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -1656,12 +1652,11 @@ body {
 
 .more-details:active {
   background-color: #756157;
-  color: rgba(255, 255, 255, 0.5)
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .more-details:disabled {
   background-color: #e5e5e5;
-  opacity: 0.7;
   pointer-events: none;
 }
 
@@ -1695,12 +1690,11 @@ body {
 
 .favorites:active {
   background-color: #82b3d3;
-  color: rgba(255, 255, 255, 0.5)
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .favorites:disabled {
   background-color: #e5e5e5;
-  opacity: 0.7;
   pointer-events: none;
 }
 
@@ -1733,12 +1727,11 @@ body {
 
 .favorites-green:active {
   background-color: #7db54f;
-  color: rgba(255, 255, 255, 0.5)
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .favorites-green:disabled {
   background-color: #e5e5e5;
-  opacity: 0.7;
   pointer-events: none;
 }
 
@@ -1849,7 +1842,7 @@ body {
 
 .pagination-item:active {
   background-color: #82b3d3;
-  color: rgba(255, 255, 255, 0.5)
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .pagination-item:has(.pagination-link:hover) {
@@ -1861,7 +1854,7 @@ body {
 }
 
 .pagination-item:has(.pagination-link:active) {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.3);
   background-color: #68a2ca;
 }
 
@@ -1941,12 +1934,12 @@ body {
   width: 100%;
   height: 100%;
   font-family: "PT Sans", Arial, sans-serif;
-  background-color: rgb(255 255 255 / 80%);
+  background-color: #f2f2f2cc;
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
 .modal {
   position: relative;
@@ -2122,8 +2115,8 @@ body {
 }
 
 .button-find-form:active {
-  background-color: #83b3d3;
-  color: rgba(255, 255, 255, 0.5)
+  background-color: #68a2ca;
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .button-find-form:disabled {
@@ -2170,7 +2163,7 @@ body {
   padding: 14px 10px;
   margin: 0;
   margin-right: 0;
-  color: #f2f2f2;
+  background-color: #f2f2f2;
   font-weight: 700;
   border: none;
   border-radius: 0 4px 4px 0;
@@ -2188,7 +2181,6 @@ body {
   font-weight: 700;
   text-align: center;
   background-color: #f2f2f2;
-  /* background-color: #e6e6e6; в мозиле правильно отображает этот цвет */
   border: none;
 }
 
@@ -2210,7 +2202,7 @@ body {
   min-width: 40px;
   height: 48px;
   padding: 14px 10px;
-  color: #f2f2f2;
+  background-color: #f2f2f2;
   font-weight: 700;
   border: none;
   border-radius: 4px 0 0 4px;
