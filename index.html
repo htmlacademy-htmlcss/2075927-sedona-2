@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link href="style/style.css" rel="stylesheet">
-    <link rel="icon" href="images/catalog/favicon.svg">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
   </head>
@@ -54,7 +55,7 @@
       <!-- Основной контент -->
       <main class="main-index" data-test="main">
         <section class="hero hero-main-picture hero-main-picture-divider" data-test="hero">
-          <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
+          <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
           <svg width="458" height="352" aria-hidden="true" focusable="false" style="margin: -1px 0 1px 0; "
             viewBox="0 0 458 352" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -124,17 +125,17 @@
           <p class="infrastructure-lead-description">Опытный персонал и качественное обслуживание!</p>
           <ul class="infrastructure-list">
             <li class="infrastructure-item infrastructure-item-home infrastructure-item-accent-dark">
-              <h4 class="infrastructure-title">Жильё</h4>
+              <h3 class="infrastructure-title">Жильё</h3>
               <p class="infrastructure-description">Рекомендуем пожить<br> в настоящем мотеле,<br>
                 всё как в кино!</p>
             </li>
             <li class="infrastructure-item infrastructure-item-food infrastructure-item-accent-light">
-              <h4 class="infrastructure-title">Еда</h4>
+              <h3 class="infrastructure-title">Еда</h3>
               <p class="infrastructure-description">Всегда заказывайте<br>
                 топовый фирменный бургер,<br> вы не разочаруетесь!</p>
             </li>
             <li class="infrastructure-item infrastructure-item-souvenir infrastructure-item-accent-dark">
-              <h4 class="infrastructure-title">Сувениры</h4>
+              <h3 class="infrastructure-title">Сувениры</h3>
               <p class="infrastructure-description">Не только китайского,<br>
                 но и настоящего местного<br> производства!</p>
             </li>
@@ -152,7 +153,7 @@
             честное бойскаутское!</p>
           <form class="subscribe-form" action="https://htmlacademy.ru/" method="post">
             <p class="subscribe-form-name">
-              <label class="visually-hidden"></label> <!-- for="for-user" добавлен в лейбл неправильно-->
+              <label class="visually-hidden"></label>
               <input type="email" class="placeholder-form" id="user-email" name="user-email" placeholder="Ваш e-mail">
               <button class="subscribe-button" type="submit">Подписаться</button>
             </p>
@@ -250,25 +251,27 @@
                 <span class="title-before-input">Дата Заезда:</span>
                 <label class="visually-hidden" for="date-before">Дата заезда</label>
                 <input class="auth-form-field field" type="text" value="27 апреля 2020" id="date-before"
-                  name="date-before" placeholder="27 апреля 2020">
+                  name="date-before" placeholder="27 апреля 2020" required>
                 <span class="form-description-first">Мы не можем отправить вас в прошлое</span>
               </div>
               <div class="field-group">
                 <span class="title-before-input">Дата Выезда:</span>
                 <label class="visually-hidden" for="date-after">Дата выезда</label>
                 <input class="auth-form-field field" type="text" value="1 сентября 2023" id="date-after"
-                  name="date-after" placeholder="1 сентября 2021">
+                  name="date-after" placeholder="1 сентября 2021" required>
                 <span class="form-description-second">На эти даты есть свободные номера. Пока есть</span>
               </div>
               <div class="block-type">
                 <span class="block-type-description">Взрослые:</span>
                 <button class="button-minus" type="button">
+                  <span class="visually-hidden">Минус</span>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 9V11H17V9H3Z" />
                   </svg>
                 </button>
-                <input class="choice" type="text" value="2" placeholder="2">
+                <input class="choice" type="text" value="2" placeholder="2" required>
                 <button class="button-plus" type="button">
+                  <span class="visually-hidden">Плюс</span>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
                   </svg>
@@ -280,18 +283,20 @@
                     возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
                 <button class="button-minus" type="button">
+                  <span class="visually-hidden">Минус</span>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 9V11H17V9H3Z" />
                   </svg>
                 </button>
                 <input class="choice" type="text" value="2" placeholder="2">
                 <button class="button-plus" type="button">
+                  <span class="visually-hidden">Минус</span>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
                   </svg>
                 </button>
               </div>
-              <button class="button-find-form" type="button">Найти</button>
+              <a class="button-find-form" href="#">Найти</a>
             </form>
           </section>
         </div>
