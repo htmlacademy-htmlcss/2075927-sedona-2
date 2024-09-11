@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link href="style/style.css" rel="stylesheet">
-    <link rel="icon" href="images/catalog/favicon.svg">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
   </head>
@@ -124,7 +125,7 @@
           <p class="infrastructure-lead-description">Опытный персонал и качественное обслуживание!</p>
           <ul class="infrastructure-list">
             <li class="infrastructure-item infrastructure-item-home infrastructure-item-accent-dark">
-              <h3 class="infrastructure-title">Жильё</h3> <!-- переделал заголовки на h3 -->
+              <h3 class="infrastructure-title">Жильё</h3>
               <p class="infrastructure-description">Рекомендуем пожить<br> в настоящем мотеле,<br>
                 всё как в кино!</p>
             </li>
@@ -152,7 +153,7 @@
             честное бойскаутское!</p>
           <form class="subscribe-form" action="https://htmlacademy.ru/" method="post">
             <p class="subscribe-form-name">
-              <label class="visually-hidden"></label> <!-- for="for-user" добавлен в лейбл неправильно-->
+              <label class="visually-hidden"></label>
               <input type="email" class="placeholder-form" id="user-email" name="user-email" placeholder="Ваш e-mail">
               <button class="subscribe-button" type="submit">Подписаться</button>
             </p>
@@ -238,7 +239,7 @@
         </a>
       </footer>
       <!-- модальное окно -->
-<!--       <div class="modal-container modal-container-close">
+      <div class="modal-container modal-container-close">
         <div class="modal modal-auth">
           <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
@@ -262,13 +263,15 @@
               </div>
               <div class="block-type">
                 <span class="block-type-description">Взрослые:</span>
-                <button class="button-minus" type="button">Минус
+                <button class="button-minus" type="button">
+                  <span class="visually-hidden">Минус</span>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 9V11H17V9H3Z" />
                   </svg>
                 </button>
                 <input class="choice" type="text" value="2" placeholder="2" required>
-                <button class="button-plus" type="button">Плюс
+                <button class="button-plus" type="button">
+                  <span class="visually-hidden">Плюс</span>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
                   </svg>
@@ -279,23 +282,25 @@
                   <span class="tooltip-text" role="tooltip">Укажите количество детей, которые будут с вами,
                     возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
-                <button class="button-minus" type="button">Минус
+                <button class="button-minus" type="button">
+                  <span class="visually-hidden">Минус</span>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 9V11H17V9H3Z" />
                   </svg>
                 </button>
                 <input class="choice" type="text" value="2" placeholder="2">
-                <button class="button-plus" type="button">Плюс
+                <button class="button-plus" type="button">
+                  <span class="visually-hidden">Минус</span>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
                   </svg>
                 </button>
               </div>
-              <button class="button-find-form" type="submit">Найти</button> исправлено на сабмит
+              <a class="button-find-form" href="#">Найти</a>
             </form>
           </section>
         </div>
-      </div> -->
+      </div>
     </div>
   </body>
 </html>
